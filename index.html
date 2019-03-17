@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPG Fighting Game</title>
+    <!-- link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!-- link to CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <!-- Linkg to Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center DefSelRow">
+            <div class="col-12 charSelCol text-center">
+                <!-- Character Selection Column -->
+                <button class="charSel" fighter="Athena" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Athena.JPG"></button>
+                <button class="charSel" fighter="Benimaru" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Benimaru.JPG"></button>
+                <button class="charSel" fighter="ChunLi" company="Capcom"><img class="onSelecMode" src="assets/images/Thum-ChunLi.JPG"></button>
+                <button class="charSel" fighter="Kim" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Kim.JPG"></button>
+                <button class="charSel" fighter="Mature" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Mature.JPG"></button>
+                <button class="charSel" fighter="Robert" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Robert.JPG"></button>
+                <button class="charSel" fighter="Ryu" company="Capcom"><img class="onSelecMode" src="assets/images/Thum-Ryu.JPG"></button>
+                <button class="charSel" fighter="Terry" company="SDK"><img class="onSelecMode" src="assets/images/Thum-Terry.JPG"></button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center GameRow">
+            <div class="col-5 text-center fightFrameR">
+                <!-- Left Fight Frame Column -->
+                <img id="defendChar" class="onFightMode leftStand" src="">
+            </div>
+
+            <div class="col-2 VsCol">
+                <!-- Vs Column -->
+                <img class="VsImg" src="assets/images/Vs.png">
+
+            </div>
+            <div class="col-5 text-center fightFrameL">
+                <!-- Right Fight Frame Column -->
+                <img id="opponChar" class="onFightMode rightStand" src="">
+            </div>
+        </div>
+        <div class="row justify-content-center LifeRow">
+            <div class="col-5 text-right my-auto leftLifeBar">
+                <!-- Left Life Frame Column -->
+                <img  class="leftLifeBarFrame" src="assets/images/LifeFrame.png">
+                <div id="leftLifeBarInd"></div>
+            </div>
+
+            <div class="col-2 text-center">
+                <!-- Attack Column -->
+                <button id="Attack"><img class="AttackImg" src="assets/images/Attack.png"></button>
+
+            </div>
+            <div class="col-5 text-left my-auto rightLifeBar">
+                <!-- Right Life Frame Column -->
+                <img class="rightLifeBarFrame" src="assets/images/LifeFrame.png">
+                <div id="rightLifeBarInd"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center OppSelRow">
+            <div class="col-12 text-center OppSelCol">
+                <!-- Oponent Selection Column -->
+            </div>
+        </div>
+    </div>
+
+    <div id="audioContainer">
+
+    </div>
+
+    <!-- Link to Javascript -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

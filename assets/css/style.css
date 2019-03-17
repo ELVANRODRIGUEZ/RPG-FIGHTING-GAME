@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+
+}
+
+body {
+    background-color: black;
+
+}
+
+.right {
+    transform: scaleX(-1);
+
+}
+
+.fightFrameR,
+.fightFrameL {
+    height: 420px;
+    width: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px 400px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.onFightMode {
+    height: 350px;
+}
+
+.fightFrameR {
+    background-image: url(../images/FightFrameRight.jpg);
+
+}
+
+.fightFrameL {
+    background-image: url(../images/FightFrameLeft.jpg);
+
+}
+
+#opponChar {
+    transform: scaleX(-1)
+}
+
+.VsCol {
+    position: relative;
+    max-width: 50px;
+}
+
+.VsImg {
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#Attack,
+.charSel {
+    background-color: transparent;
+    /* opacity:.1; */
+    border: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.onSelecMode {
+    height: 90px;
+}
+
+#Attack {
+    padding: 0px;
+}
+
+.AttackImg {
+
+    height: 100px;
+    /* position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%); */
+
+}
+
+.leftLifeBar {
+    height: 60px;
+    /* width: 200px; */
+    padding:0;
+    margin:0;
+    /* display: flex; */
+    /* align-content: center; */
+    position:relative;
+}
+
+.leftLifeBarFrame {
+    width: 220px;
+    right: 0;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+#leftLifeBarInd {
+    width: 0px;
+    background-color: green;
+    /* margin-right: 10px; */
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+#victoriesCont {
+    height: 80px;
+}
+
+#defenderWins {
+    /* display: inline-block; */
+    float: left;
+    height: 40px;
+    padding-top: 20px;
+    box-sizing: content-box;
+}
+
+.rightLifeBar {
+    height: 60px;
+    /* width: 200px; */
+    padding:0;
+    margin:0;
+    /* display: flex; */
+    /* align-content: center; */
+    position:relative;
+}
+
+.rightLifeBarFrame {
+    width: 220px;
+    left: 0;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+#rightLifeBarInd {
+    width: 0px;
+    background-color: green;
+    height: 45px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.defeatedOpp {
+    display: none;
+}
